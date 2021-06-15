@@ -12,6 +12,7 @@ dist/
 
 # Compiled Python bytecode
 *.py[cod]
+.ipynb_checkpoints
 
 # Log files
 *.log
@@ -21,9 +22,17 @@ dist/
 
 # Maven
 target/
+ETLPipeline/target/
+KafkaProducer/target/
 dist/
 
+volumes/mysql/*
+volumes/spark_app/*
+volumes/spark_jars/*
+KafkaProducer/spark_jars/*
+
 # JetBrains IDE
+TierChallenge/src/main/resources/*
 .idea/
 
 # Unit test reports

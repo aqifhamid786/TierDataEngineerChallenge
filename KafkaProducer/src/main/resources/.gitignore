@@ -1,0 +1,4 @@
+# Ignore everything in this directory
+track_events.json
+weather.json
+# Except this file
