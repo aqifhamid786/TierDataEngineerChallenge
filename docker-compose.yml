@@ -130,10 +130,11 @@ services:
             - "4043:4043"
             - "5000-5010:5000-5010"
         depends_on: 
+            - mysql
             - spark-worker-1
             - spark-worker-2
         volumes:
-            - ./volumes/spark_jars:/opt/bitnami/spark/ivy:z
+            - ./volumes/spark_jars/2:/opt/bitnami/spark/ivy:z
     
     # Our ETL pipeline for segment-track data source. 
     etl-pipeline-segment-track:
@@ -153,7 +154,8 @@ services:
             - "4044:4043"
             - "5020-5030:5000-5010"
         depends_on: 
+            - mysql
             - spark-worker-1
             - spark-worker-2
         volumes:
-            - ./volumes/spark_jars:/opt/bitnami/spark/ivy:z
+            - ./volumes/spark_jars/1:/opt/bitnami/spark/ivy:z
