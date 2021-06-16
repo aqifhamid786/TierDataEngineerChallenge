@@ -56,17 +56,17 @@ We wrote a simple kafka producer, we reach an event from both of the supplied js
 
 ## Deployment 
 
-### Deployment script
-
-Make sure you are in the root directory of the project and then execute following command to compile and deploy code and launch our container services.
-
-`cd start_app.sh`
-
 ### Pre-requisite
 
 - Maven is required for compiling ETL Job and Kafka producer code.
 - Docker compose and docker enviorment to host containers of our services.
 - MySQL Workbench to inspect the status of loaded data.
+- Copy static json data files in to the following resource folder,`./KafkaProducer/src/main/resources/` , before deployment
+### Deployment script
+
+Make sure you are in the root directory of the project and then execute following command to compile and deploy code and launch our container services.
+
+`cd start_app.sh`
 
 ### Recommeded Local Hardware Setup
 
