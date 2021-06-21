@@ -1,4 +1,4 @@
-# Tier DE Challenge.
+# Tier Data Engineer Challenge.
 
 This repository contains a simple end-to-end ETL pipeline to process weather and scooter tracking events data. 
 
